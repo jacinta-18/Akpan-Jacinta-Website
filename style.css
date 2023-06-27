@@ -1,0 +1,168 @@
+.wrapper{
+    background-image:url(worker-image2.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:calc(100% - 5rem);
+    padding: 1.5rem;
+}
+.container h1{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 5rem;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.container p{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    width: 80%;
+
+}
+.learn-more{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 8rem;
+    border: none;
+    box-shadow: 0 1px 3px 2px rgba(255, 255, 255, 0.5);
+    transition: all 203ms linear;
+    font-weight: 700;
+}
+.learn-more:hover{
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.about-section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 80vh;
+}
+.about-content{
+    margin-left: 2rem;
+}
+.about-content h1{
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+.about-content p{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 24px;
+
+}
+.about-img{
+    width: 60%;
+    padding: 1rem;
+    height: 55%;
+
+}
+.image-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: beige;
+}
+.form-header{
+    font-size: 2rem;
+}
+.form-wrapper{
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    height: 30rem;
+    width: 30rem;
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+input{
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    height: 4rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+textarea{
+    width: 100%;
+    padding: 1rem;
+}
+button{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 4rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: aquamarine;
+    color: lightslategray;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.5;
+    color: black;
+}
+
+
+@media screen and (min-width:1200px) {
+    .container h1{
+        font-size: 10rem;
+        line-height: 40px;
+    }
+    .container p{
+        width: 50%;
+        font-size: 5rem;
+        line-height: 43px;
+    }
+    .about-section{
+        padding: 2rem 7rem;
+
+    }
+    .contact-wrapper{
+        height: 90vh;
+
+    }
+    
+}
